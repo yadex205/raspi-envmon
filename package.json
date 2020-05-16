@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "start": "pm2 start --name raspi-envmon ts-node -- src/index"
+    "start": "pm2 start --name raspi_envmon --restart-delay 5000 ts-node -- src/index",
+    "stop": "pm2 stop raspi_envmon",
+    "restart": "pm2 restart --update-env raspi_envmon"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   "homepage": "https://github.com/yadex205/raspi-envmon#readme",
   "dependencies": {
     "@types/i2c-bus": "^5.1.0",
+    "axios": "^0.19.2",
     "i2c-bus": "^5.2.0",
     "pm2": "^4.4.0",
     "ts-node": "^8.10.1",
