@@ -1,0 +1,19 @@
+{
+  "name": "raspi-envmon",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yadex205/raspi-envmon.git"
+  },
+  "author": "Kanon Kakuno <yadex205@outlook.jp>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yadex205/raspi-envmon/issues"
+  },
+  "homepage": "https://github.com/yadex205/raspi-envmon#readme"
+}
