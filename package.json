@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "",
   "scripts": {
-    "start": "ts-node src/index"
+    "start": "pm2 start --name raspi-envmon ts-node -- src/index"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   "dependencies": {
     "@types/i2c-bus": "^5.1.0",
     "i2c-bus": "^5.2.0",
+    "pm2": "^4.4.0",
     "ts-node": "^8.10.1",
     "typescript": "^3.9.2"
   }
